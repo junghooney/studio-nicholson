@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+/* CSS Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;   
+        }
+
+        img {
+            width: 275px;
+            height: 350px;
+        }
+
+        header,
+        section,
+        footer {
+            width: calc(100% - 20%);
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: 0.1em;
+        }
+
+/* CSS Pseudo class */
+        
+        .main-top-second-1::before {
+            content: '';
+            display: block;
+            clear: left;
+            border: 2px solid #000;
+            margin-bottom: 25px;   
+        }
+
+        .main-top-second-1::after {
+            content: '';
+            display: block;
+            clear: left;
+            border: 1px solid #333;
+            margin-top: 25px;
+            margin-bottom: 18px;   
+        }
+
+        .main-top-second-2::after {
+            content: '';
+            display: block;
+            clear: left;
+            border: 2px solid #000;
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
+
+        .main-middle-1::after {
+            content: '';
+            display: block;
+            clear: left;
+            border: 1px solid #000;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .main-middle-4::before {
+            position: absolute;
+            top: -15px;
+            content: '';       
+            display: block;
+            clear: left;
+            width: 100%;
+            border: 1px solid #000;
+        }
+
+
+        .main-middle-6::before {
+            position: relative;
+            top: -20px;
+            content: '';
+            display: block;
+            clear: left;
+            width: 100%;
+            border: 1px solid #000;
+        }
+
+
+
+        .main-middle-8::before {
+            position: relative;
+            top: 30px;
+            content: '';
+            display: block;
+            clear: left;
+            width: 100%;
+            border: 1px solid #000;
+        }
+
+
+
+
+                    
+
+/* header */
+        header {
+            color: #333333;
+        }
+/* main-top */
+
+        .main-top {
+
+        }
+
+        .main-top-first {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            margin-bottom: 2px;
+        }
+
+        .main-top-first-1 input {
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            width: 107px;
+            height: 32.5px;
+            border: 1px solid lightgray;
+            border-radius: 0;
+            padding-left: 12px;
+            margin-right: 8px;
+        }
+
+        .main-top-first-1 span {
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+        }
+
+
+        .main-top-first-2 button {
+            font-size: 11px;
+            width: 25px;
+            height: 32.5px;
+            border: 1px solid lightgray;
+            border-right: none;
+            border-radius: 0;   
+            padding-right: 0;
+            background-color: #fff;
+            margin-right: 0;  
+        } 
+
+        .main-top-first-2 input {
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            outline-style: none;
+            width: 200px;
+            height: 32.5px;
+            border: 1px solid lightgray;
+            border-left: none;
+            border-radius: 0;
+            margin-right: 5px;
+        }
+
+        .main-top-first-2 span {
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+        }
+        
+
+        .main-top-second-1 {
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 0.5em;
+            text-align: center;
+        }
+
+        .main-top-second-2 ul {
+            font-size: 11px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: calc(100% - 30%);
+            margin: 0 auto; 
+        }
+/* main-middle */
+
+        .main-middle-1 {
+            width: calc(100% - 20%);
+            height: calc(100% - 40%);
+            margin: 0 auto;
+        }
+
+        .main-middle-1 img {
+            display: block;
+            width: 100%;
+            height: 50%;
+        }
+
+        .main-middle-2 {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+/* main-middle women*/        
+
+        .main-middle-3 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: calc(100% - 20%);
+            margin-bottom: 25px;
+        }
+
+        .main-middle-3-child-1 img,
+        .main-middle-3-child-2 img,
+        .main-middle-3-child-3 img,
+        .main-middle-3-child-4 img {
+            margin-bottom: 10px;
+        }
+
+        .main-middle-3 div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
+
+/* main-middle-men */
+        .main-middle-4 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.175em;
+            width: calc(100% - 20%);
+        }
+
+        .main-middle-5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: calc(100% - 20%);
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+
+        .main-middle-5-child-1 img,
+        .main-middle-5-child-2 img,
+        .main-middle-5-child-3 img,
+        .main-middle-5-child-4 img {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .main-middle-5-child-1 div,
+        .main-middle-5-child-2 div,
+        .main-middle-5-child-3 div,
+        .main-middle-5-child-4 div {
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+/*  features */
+
+
+
+        .main-middle-6 {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .main-middle-7 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+        }
+
+    
+        
+
+        .main-middle-7 article img {
+            width: 95%;
+            height: 500px;
+        }
+
+
+        .main-middle-7 div h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px
+        }
+        
+        .main-middle-7 div p {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            padding-right: 20px;
+            margin-bottom: 15px
+        } 
+
+        .main-middle-7 div span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .main-middle-8 div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+
+
+        .main-middle-8 div h2 {
+            font-size: 11px;
+            font-weight: 600;
+        }
+ 
+
+        .main-middle-8 div p {
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+
+        .main-middle-9 {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(233, 233, 233);
+        }
+
+        .main-middle-9-1,
+        .main-middle-9-2 {
+            margin-top: 5%;
+        }
+
+
+        .main-middle-9 article {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 10%;
+        }
+
+        .main-middle-9-1 div {
+            margin-top: 2.5%;
+        }
+
+        .main-middle-9-1 h2 {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .main-middle-9-1 a {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+        }
+
+        .main-middle-9-2 div {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1em;
+            line-height: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-right: 50px;
+        }
+
+        .main-middle-9-2 div ul {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            line-height: 1.5em;
+        }
+
+
+        .main-button {
+            font-weight: 12px;
+            font-weight: 600;
+            width: 100%;
+            background-color: rgb(50, 50, 50);
+            color: #fff;
+        }
+
+        .main-button div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+        }
+
+        .main-button div input {
+            font-size: 12px;
+            width: 340px;
+            height: 45px;
+            outline-style: none;
+            padding: 20px 20px;
+        }
+
+        .main-button div button {
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.025em;
+            width: 95px;
+            height: 45px;
+            border-radius: none;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .main-button div span {
+            font-size: 8px;
+            font-weight: 400;
+            letter-spacing: 0.25em;
+            line-height: 2em;
+        }
+
+
+        
+
+
+
+
+
+        
+
+    </style>
+    <title>STUDIO NICHOLSON</title>
+</head>
+<body>
+    <header class="main-top">
+        <nav class="main-top-first">
+                <div class="main-top-first-1">
+                    <input type=text placeholder="ENGLISH">
+                    <span>LOGIN / CREATE ACCOUNT</span>
+                </div>
+                <div class="main-top-first-2">
+                    <button type="button">
+                        <i class="fas fa-search"></i> 
+                    </button>
+                    <input type="text" placeholder="SEARCH">
+                    
+                    <span>
+                        0 ITEMS / $0.00
+                    </span>
+                </div>
+        </nav>
+            <div class="main-top-second-1">
+                <h1>STUDIO<br>
+                    NICHOLSOM</h1>
+            </div>
+
+            <div class="main-top-second-2">
+                <ul>
+                    <li>NEW ARRIVALS</li>
+                    <li>WOMEN</li>
+                    <li>MEN</li>
+                    <li>SLEEPWEAR</li>
+                    <li>FOOTER</li>
+                    <li>ABOUT</li>
+                    <li>FEATURES</li>
+                    <li>INSTAGRAM</li>
+                </ul>
+            </div>
+    </header>
+<!-- section women -->
+    <section class="main-middle-1">
+        <img src="./assets/studio-nichiolson_back.jpeg" alt="studio-nicholson-picture">
+    </section> 
+
+    <section class="main-middle-2">
+        <div>
+            <p>WOMEN'S SPRING 21</p>
+        </div>
+    </section>
+
+    <section class="main-middle-3">
+        <div class="main-middle-3-child-1">
+            <div>
+                <img src="./assets/studio-nichiolson_1.jpeg" alt="">
+                <div>
+                    <p>
+                        DORDONI VOLUME<br>
+                        PANT IN MILK<br>
+                        VISCOSE WOOL
+                    </p>
+                    <span>
+                        $395.00
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-middle-3-child-2">
+            <div>
+                <img src="./assets/studio-nichiolson_2.jpeg" alt="">
+                <div>
+                    <p>
+                        RUTHE SELVEDGE<Br>
+                        JEAN IN OPIC WHITE    
+                    </p>
+                    <span>
+                        $320.00
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-middle-3-child-3">
+            <div>
+                <img src="./assets/studio-nichiolson_3.jpeg" alt="">
+                <div>
+                    <p>
+                        MOURA PANT IN DARK<br>
+                        NAVY
+                    </p>
+                    <span>
+                        $325.00
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-middle-3-child-4">
+            <div>
+                <img src="./assets/studio-nichiolson_4.jpeg" alt="">
+                <div>
+                    <p>
+                        DORDONI VOLUME<br>
+                        PANT IN TAN
+                    </p>
+                    <span>
+                        $295.00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- section men -->
+    <section class="main-middle-4">
+        <div>
+            <p>MEN'S SPRING 21</p>
+        </div>  
+    </section>
+
+    <section class="main-middle-5">
+        <div class="main-middle-5-child-1">
+            <img src="./assets/studio-nichiolson-men_1.jpeg" alt="studio-nichiolson-picture">
+            <div>
+                <p>
+                    SORTE PANT IN TAN
+                </p>
+                <span>
+                    $295.00
+                </span>
+            </div>
+        </div>
+
+        <div class="main-middle-5-child-2">
+            <img src="./assets/studio-nichiolson-men_2.jpeg" alt="studio-nichiolson-picture">
+            <div>
+                <p>
+                    SORTE PANT IN NAVY
+                </p>
+                <span>
+                    $300.00
+                </span>
+            </div>
+        </div>
+
+        <div class="main-middle-5-child-3">
+            <img src="./assets/studio-nichiolson-men_3.jpeg" alt="studio-nichiolson-picture">
+            <div>
+                <p>
+                    SORTE PANT IN BEIGE
+                </p>
+                <span>
+                    $295.00
+                </span>
+            </div>
+        </div>
+
+        <div class="main-middle-5-child-4">
+            <img src="./assets/studio-nichiolson-men_4.jpeg" alt="studio-nichiolson-picture">
+            <div>
+                <p>
+                    SORTE PANT IN WHITE
+                </p>
+                <span>
+                    $300.00
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-middle-6">
+        <div>
+            <p>FEATURES</p>
+        </div>
+    </section>
+
+    <section class="main-middle-7">
+        <article>
+            <img src="./assets/studio-nichiolson-feature-1.jpeg" alt="studio-nicholson-picture">
+            <div>
+                <h2>Men's Spring Summer 21 Collection - Breathe + Blend + Energise</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae quod nemo, veniam soluta ratione animi nobis nam magnam eos ea minus porro molestias repudiandae autem est illo perspiciatis temporibus odit natus neque velit quo at! Animi nesciunt perferendis esse expedita, repellendus nobis optio quaerat! Soluta cumque id, provident veritatis modi, itaque molestias qui voluptas nemo quod culpa placeat assumenda explicabo doloribus, optio ipsam vero maxime minus neque? Velit aliquid tempora a quibusdam maiores et in, suscipit molestias porro aliquam earum debitis explicabo perspiciatis ad quae odio harum cum. Suscipit asperiores perferendis culpa vel sint quam alias est eligendi consectetur.</p>
+                <span>
+                    Reand more
+                </span>
+            </div>
+        </article>
+        <article>
+            <img src="./assets/studio-nichiolson-feature-2.jpeg" alt="studio-nicholson-picture">
+            <div>
+                <h2>Women's Spring 2021 Collection - Lifelong Modularity</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, adipisci sed odio esse aspernatur quasi at libero sunt! Quaerat nihil ab iusto ullam nesciunt debitis illum non ea assumenda dolore nostrum dolores maxime tenetur reiciendis excepturi voluptates dignissimos rerum quas officiis a pariatur incidunt, voluptas, iste dicta. Vero ipsa nemo molestias, beatae nulla aspernatur reprehenderit laudantium ipsam! Ipsam delectus dolores nulla atque quia soluta reprehenderit similique officia fuga aperiam, illo suscipit cupiditate, sunt necessitatibus sit consequuntur eveniet fugit, quae velit. Non ullam est ut dolore quis quae hic et nisi eos distinctio, maiores illum. Expedita provident quos explicabo animi tenetur.</p>
+                <span>
+                    Reand more
+                </span>
+            </div>
+        </article>
+        <article>
+            <img src="./assets/studio-nichiolson-feature-3.jpeg" alt="studio-nicholson-picture">
+            <div>
+                <h2>
+                    Pop, Zip + Slide - Introducing the Studio Nicholson Wallet + Card Holder
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis recusandae, nesciunt sequi reiciendis reprehenderit similique! Corrupti rerum aliquid tempora impedit amet, sapiente deserunt voluptates, incidunt animi aliquam expedita iure nesciunt aut repellat mollitia perferendis at? Ad nobis et ex ipsa ullam obcaecati consequatur quo amet tenetur adipisci quia deserunt aut consequuntur id ut dolor expedita, dolores numquam commodi laboriosam sint provident. Voluptate, sit dolorum. Et ea illo, labore ut, ab laudantium distinctio asperiores eum, maiores molestiae nam? Nesciunt accusantium recusandae quos reprehenderit exercitationem laboriosam qui error nobis quis? Earum a facere possimus dicta impedit recusandae ea tempore voluptate illum?</p>
+                <span>
+                    Reand more
+                </span>
+            </div>
+        </article>
+    </section>
+
+    <section class="main-middle-8">
+        <div>
+            <h2>INSTAGRAM</h2>
+            <p>FOLLOW @STUDIONICHOLSON</p>
+        </div>
+    </section>
+
+    <section class="main-middle-9">
+        <article>
+            <div class="main-middle-9-1">
+                <div>
+                    <h2>CUSTOMER SERVICE</h2>
+                    <a href="service@studionicholson.com">service@studionicholson.com</a>
+                </div>
+            </div>
+            <div class="main-middle-9-2">
+                <div>
+                    <div>
+                        <ul>
+                            <li>INFOMATIN</li>
+                            <li>Shipping &amp; Retunes</li>
+                            <li>Gift Cards</li>
+                            <li>Contact</li>
+                            <li>Terms &amp; Conditions</li>
+                            <li>Cookies &amp; Privacy</li>
+                            <li>Klarna FAQ</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>SOCIAL</li>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Pinterest</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </article>
+    </section>
+    
+    <footer class="main-button">
+        <div>
+            <div>
+                <input type="text" placeholder="Sing-up fot latest news and access to Private sales">
+                <button>SUBSCRIBE</button>
+            </div>
+            <div>
+                <span>
+                    2021 STUIDO NICHOLSON<br>
+                    ALL RIGHTS RESERVED.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/9d20ac9257.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
